@@ -42,3 +42,24 @@ ALTER TABLE animals drop column species;
 alter table animals add column species_id integer references species (id);
 alter table animals add column owner_id integer references owners (id);
 
+--Create a table named vets with the following columns:
+CREATE TABLE vets (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    age integer,
+    date_of_graduation date
+);
+
+--Create a "join table" called specializations to handle this relationship.
+CREATE TABLE specializations (
+vet_id integer references vets (id),
+species_id integer references species(id),
+PRIMARY KEY (vet_id, species_id)
+);
+-- Create a "join table" called visits to handle this relationship
+CREATE TABLE visits (
+    animal_id integer REFERENCES animals (id),
+    vet_id integer REFERENCES vets (id),
+    visit_date date,
+    PRIMARY KEY (animal_id, vet_id)
+);
