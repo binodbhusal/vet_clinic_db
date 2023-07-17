@@ -63,3 +63,4 @@ CREATE TABLE visits (
     visit_date date,
     PRIMARY KEY (animal_id, vet_id)
 );
+CREATE INDEX idx_visits_animal_id ON visits (animal_id);
