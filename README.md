@@ -56,7 +56,6 @@ PostgreSQL
   </ul>
 </details>
 
-
 ### Key Features <a name="key-features"></a>
 
 > Key Features of Vetclinic database
@@ -80,7 +79,6 @@ Includes the following features...
 
 To get a local copy up and running, follow these steps.
 
-
 ### Prerequisites
 
 In order to run this project you need:
@@ -102,6 +100,8 @@ How to open your project ?
 First tyou need to create database in PostgreSQL
 Open .sql files and copy queries paste it to runpsql.sh
 
+
+[Open Vet Clinic Database Diagram](https://drawsql.app/teams/binod-bhusal/diagrams/vetclinic)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
